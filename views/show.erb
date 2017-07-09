@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= @youtube_video[:name]%></title>
+	</head>
+	<body>
+
+		<h3><%= @youtube_video[:name]%></h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/<%@youtube_video[:video_code]%>" frameborder="0" allowfullscreen></iframe>
+
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YouTube</title>
+</head>
+<body>
+
+
+<%@youtube_videos.each do |hash| %>
+
+<h3><%=hash[:name]%></h3>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/<%hash[:video_code]%>" frameborder="0" allowfullscreen></iframe>
+
+<%end%>
+
+
+</body>
+</html>
